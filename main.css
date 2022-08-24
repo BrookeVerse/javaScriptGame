@@ -66,3 +66,24 @@ p {
 .menucontainer .menu__buttons {
   margin: auto;
 }
+
+.infoContainer .info {
+  display: flex;
+  flex-direction: column;
+  width: 70vw;
+  height: 70vw;
+  margin: auto;
+  padding: auto;
+  border-radius: 20px;
+  background-color: #f08080;
+  box-shadow: 5px 2px 5px 1px #595953;
+}
+.infoContainer .info__heading {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-weight: 200;
+  text-decoration: underline;
+}
+.infoContainer .info__button {
+  margin-top: 10px;
+}
