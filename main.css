@@ -1,0 +1,68 @@
+@import url("https://fonts.googleapis.com/css2?family=DynaPuff&family=Fredoka+One&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  align-items: center;
+  font-family: Fredoka One, arial, comic;
+  color: #89cff0;
+}
+
+body {
+  background-image: url("./assets/sweetsBackground.png");
+  background-repeat: no-repeat;
+}
+
+button {
+  border-radius: 20px;
+  border: 2px solid #89cff0;
+  padding: 10px;
+  background: #e6e6fa;
+  box-shadow: 5px 2px 5px 1px #595953;
+}
+
+h1 {
+  margin: 20px;
+}
+
+footer {
+  position: absolute;
+  bottom: 10px;
+  width: 100vw;
+  height: 5vw;
+  margin: 20px;
+  display: flex;
+}
+
+p {
+  font-size: small;
+}
+
+@media screen and (min-width: 1440px) {
+  .menuContainer .menu {
+    height: 400px !important;
+    width: 400px !important;
+    margin-top: 100px !important;
+  }
+
+  footer {
+    margin: 0;
+  }
+}
+.menucontainer .menu {
+  display: flex;
+  flex-direction: column;
+  width: 50vw;
+  height: 50vw;
+  margin: auto;
+  padding: auto;
+  border-radius: 20px;
+  background-color: #f08080;
+  box-shadow: 5px 2px 5px 1px #595953;
+}
+.menucontainer .menu__heading {
+  margin-top: 20px;
+}
+.menucontainer .menu__buttons {
+  margin: auto;
+}
