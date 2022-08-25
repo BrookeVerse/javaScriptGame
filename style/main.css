@@ -91,28 +91,37 @@ p {
   margin-top: 10px;
 }
 
-.gameBoard__img {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  grid-template-rows: repeat(4, 1fr);
-  grid-template: "empty empty empty clue empty" "clue empty empty empty clue" "empty clue empty empty empty" "empty empty empty empty empty";
-  border: 5px solid red;
+.game__img {
   position: relative;
   margin: auto;
   width: 60vh;
   height: 60vw;
 }
-.gameBoard__empty {
-  grid-area: empty;
-}
-.gameBoard__clue {
-  grid-area: clue;
-}
-.gameBoard__marty {
+.game__marty {
   position: absolute;
-  left: -70px;
-  bottom: 210px;
+  right: 200px;
+  bottom: 170px;
   margin: auto;
   width: 60vw;
   height: 60vw;
+}
+.game__clueOne {
+  position: absolute;
+  top: 200px;
+  right: 200px;
+}
+
+.clueContainer .clue {
+  display: flex;
+  flex-direction: column;
+  width: 50vw;
+  height: 50vw;
+  margin: auto;
+  padding: auto;
+  border-radius: 20px;
+  background-color: #f08080;
+  box-shadow: 5px 2px 5px 1px #595953;
+}
+.clueContainer .clue__heading {
+  margin-top: 20px;
 }
