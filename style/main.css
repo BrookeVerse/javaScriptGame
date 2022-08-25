@@ -114,8 +114,8 @@ p {
 .clueContainer .clue {
   display: flex;
   flex-direction: column;
-  width: 50vw;
-  height: 50vw;
+  width: 60vw;
+  height: 60vw;
   margin: auto;
   padding: auto;
   border-radius: 20px;
@@ -123,5 +123,8 @@ p {
   box-shadow: 5px 2px 5px 1px #595953;
 }
 .clueContainer .clue__heading {
-  margin-top: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-weight: 200;
+  text-decoration: underline;
 }
