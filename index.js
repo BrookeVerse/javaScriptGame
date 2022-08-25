@@ -1,11 +1,14 @@
 //Option Button
 //When its clicked changes HTML to show an option to change the sound.
 const infoButton = document.querySelector(".menu__infoButton");
-const menuBox = document.querySelector(".menuContainer");
-const homeButton = document.querySelector(".info__button");
+const menuContent = document.querySelector(".menuContainer");
+const homeButton = document.querySelector(".home__Button");
 //grabbing the button
 
-const menuContent = menuBox;
+//Home Button Operation, refreshes the page
+homeButton.addEventListener("click", () => {
+  window.location.reload();
+});
 
 const openInfoBox = () => {
   return `<div class="infoContainer">
@@ -15,7 +18,6 @@ const openInfoBox = () => {
             You are Marty the marshmallow, you have been trapped in a room.
             Work out the clues to escape, or Hattie the Hot Choclate will get you. 
             </p> 
-            <button class="info__button">Home</button>
         </div>
     </div>`;
 };
@@ -25,8 +27,6 @@ const openInfoBox = () => {
 
 infoButton.addEventListener("click", () => {
   menuContent.innerHTML = "";
-  menuBox.innerHTML = openInfoBox();
+  menuContent.innerHTML = openInfoBox();
 });
 //An event listener that will open the info box
-
-//Home Button Operation

@@ -21,10 +21,6 @@ button {
   box-shadow: 5px 2px 5px 1px #595953;
 }
 
-h1 {
-  margin: 20px;
-}
-
 footer {
   position: absolute;
   bottom: 10px;
@@ -49,6 +45,13 @@ p {
     margin: 0;
   }
 }
+.home {
+  display: flex;
+  margin: 30px;
+  justify-content: space-around;
+  flex-direction: row-reverse;
+}
+
 .menucontainer .menu {
   display: flex;
   flex-direction: column;
@@ -70,8 +73,8 @@ p {
 .infoContainer .info {
   display: flex;
   flex-direction: column;
-  width: 70vw;
-  height: 70vw;
+  width: 60vw;
+  height: 60vw;
   margin: auto;
   padding: auto;
   border-radius: 20px;
