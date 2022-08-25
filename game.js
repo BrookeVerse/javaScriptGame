@@ -18,6 +18,6 @@ const openClue = (clue) => {
 cluesArray.forEach((clue) => {
   clueOne.addEventListener("click", () => {
     container.innerHTML = "";
-    container.innerHTML = openClue(clue)[0];
+    container.innerHTML += openClue(clue);
   });
 });
