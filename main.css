@@ -90,3 +90,29 @@ p {
 .infoContainer .info__button {
   margin-top: 10px;
 }
+
+.gameBoard__img {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  grid-template: "empty empty empty clue empty" "clue empty empty empty clue" "empty clue empty empty empty" "empty empty empty empty empty";
+  border: 5px solid red;
+  position: relative;
+  margin: auto;
+  width: 60vh;
+  height: 60vw;
+}
+.gameBoard__empty {
+  grid-area: empty;
+}
+.gameBoard__clue {
+  grid-area: clue;
+}
+.gameBoard__marty {
+  position: absolute;
+  left: -70px;
+  bottom: 210px;
+  margin: auto;
+  width: 60vw;
+  height: 60vw;
+}
