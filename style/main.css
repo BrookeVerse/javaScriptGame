@@ -110,6 +110,21 @@ p {
   top: 200px;
   right: 200px;
 }
+.game__clueTwo {
+  position: absolute;
+  top: 200px;
+  left: 260px;
+}
+.game__clueThree {
+  position: absolute;
+  top: 250px;
+  left: 120px;
+}
+.game__clueFour {
+  position: absolute;
+  top: 160px;
+  left: 130px;
+}
 
 .clueContainer .clue {
   display: flex;
@@ -127,4 +142,9 @@ p {
   margin-bottom: 10px;
   font-weight: 200;
   text-decoration: underline;
+}
+.clueContainer .clue__number {
+  margin-left: 150px;
+  font-size: large;
+  color: #fbfaf5;
 }

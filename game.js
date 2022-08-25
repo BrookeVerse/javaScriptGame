@@ -1,7 +1,11 @@
 import { cluesArray } from "./data/clues.js";
 //Need to grab the button
 const clueOne = document.querySelector(".game__clueOne");
+const clueTwo = document.querySelector(".game__clueTwo");
+const clueThree = document.querySelector(".game__clueThree");
+const clueFour = document.querySelector(".game__clueFour");
 const container = document.querySelector(".game");
+const refreshPress = document.querySelector(".game__marty");
 //function for content to change
 
 const openClue = (clue) => {
@@ -15,9 +19,42 @@ const openClue = (clue) => {
 };
 
 //Function to collect data from the object array
-cluesArray.forEach((clue) => {
+cluesArray.forEach(() => {
   clueOne.addEventListener("click", () => {
     container.innerHTML = "";
-    container.innerHTML += openClue(clue);
+    const clue = cluesArray[0];
+    container.innerHTML = openClue(clue);
   });
+});
+
+//eventlisterner to call clue two
+cluesArray.forEach(() => {
+  clueTwo.addEventListener("click", () => {
+    container.innerHTML = "";
+    const clue = cluesArray[1];
+    container.innerHTML = openClue(clue);
+  });
+});
+
+//event listener for clue three
+cluesArray.forEach(() => {
+  clueThree.addEventListener("click", () => {
+    container.innerHTML = "";
+    const clue = cluesArray[2];
+    container.innerHTML = openClue(clue);
+  });
+});
+
+//event listener for clue four
+cluesArray.forEach(() => {
+  clueFour.addEventListener("click", () => {
+    container.innerHTML = "";
+    const clue = cluesArray[3];
+    container.innerHTML = openClue(clue);
+  });
+});
+
+//event listener for when the page needs refreshing
+refreshPress.addEventListener("click", () => {
+  window.location.reload();
 });

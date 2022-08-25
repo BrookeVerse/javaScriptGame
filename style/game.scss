@@ -20,6 +20,25 @@
     position: absolute;
     top: 200px;
     right: 200px;
+    //opacity: 0%;
+  }
+  &__clueTwo {
+    position: absolute;
+    top: 200px;
+    left: 260px;
+    //opacity: 0%;
+  }
+  &__clueThree {
+    position: absolute;
+    top: 250px;
+    left: 120px;
+    //opacity: 0%;
+  }
+  &__clueFour {
+    position: absolute;
+    top: 160px;
+    left: 130px;
+    //opacity: 0%;
   }
 }
 
@@ -40,6 +59,12 @@
       margin-bottom: 10px;
       font-weight: 200;
       text-decoration: underline;
+    }
+
+    &__number {
+      margin-left: 150px;
+      font-size: large;
+      color: $fourthcolour;
     }
   }
 }
