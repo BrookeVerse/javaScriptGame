@@ -26,23 +26,53 @@ footer {
   bottom: 10px;
   width: 100vw;
   height: 5vw;
-  margin: 20px;
+  margin: auto;
   display: flex;
+  justify-content: space-evenly;
 }
 
 p {
   font-size: small;
 }
 
+@media screen and (min-width: 425px) {
+  button {
+    padding: 20px 30px;
+    margin-bottom: 30px;
+    font-size: large;
+  }
+
+  .menuContainer {
+    flex-direction: column;
+  }
+  .menuContainer .menu {
+    height: 300px !important;
+    width: 300px !important;
+  }
+  .menuContainer .menu__heading {
+    font-size: 30px;
+  }
+  .menuContainer .menu__buttons {
+    flex-direction: column;
+  }
+
+  .infoContainer .info {
+    height: 250px !important;
+    width: 250px !important;
+  }
+  .infoContainer .info__heading {
+    font-size: 30px;
+  }
+  .infoContainer .info__instruction {
+    margin-top: 20px;
+    font-size: 16px;
+  }
+}
 @media screen and (min-width: 1440px) {
   .menuContainer .menu {
     height: 400px !important;
     width: 400px !important;
     margin-top: 100px !important;
-  }
-
-  footer {
-    margin: 0;
   }
 }
 .home {
@@ -67,6 +97,7 @@ p {
   margin-top: 20px;
 }
 .menucontainer .menu__buttons {
+  display: flex;
   margin: auto;
 }
 
@@ -86,9 +117,6 @@ p {
   margin-bottom: 10px;
   font-weight: 200;
   text-decoration: underline;
-}
-.infoContainer .info__button {
-  margin-top: 10px;
 }
 
 .game__img {
