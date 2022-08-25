@@ -7,6 +7,7 @@ const clueFour = document.querySelector(".game__clueFour");
 const container = document.querySelector(".game");
 const refreshPress = document.querySelector(".game__marty");
 const inputBox = document.querySelector(".input__code");
+const inputContainer = document.querySelector(".input");
 //function for content to change
 
 const openClue = (clue) => {
@@ -60,9 +61,18 @@ refreshPress.addEventListener("click", () => {
   window.location.reload();
 });
 
+//event listener for when the answer is put into the input box
 inputBox.addEventListener("input", () => {
   const inputAnswer = 26789;
   if (inputBox.value == inputAnswer) {
-    console.log("Hello");
+    inputContainer.innerHTML = "";
+    inputContainer.innerHTML += exitDoor();
   }
 });
+
+//function that add html to make a button that takes you back to the home screen
+const exitDoor = () => {
+  return `<div class=exit>
+         <a href="./index.html"><button class="home__refresh">Exit Here!</button></a>
+    </div>`;
+};
