@@ -6,6 +6,7 @@ const clueThree = document.querySelector(".game__clueThree");
 const clueFour = document.querySelector(".game__clueFour");
 const container = document.querySelector(".game");
 const refreshPress = document.querySelector(".game__marty");
+const inputBox = document.querySelector(".input__code");
 //function for content to change
 
 const openClue = (clue) => {
@@ -57,4 +58,11 @@ cluesArray.forEach(() => {
 //event listener for when the page needs refreshing
 refreshPress.addEventListener("click", () => {
   window.location.reload();
+});
+
+inputBox.addEventListener("input", () => {
+  const inputAnswer = 26789;
+  if (inputBox.value == inputAnswer) {
+    console.log("Hello");
+  }
 });
