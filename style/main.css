@@ -42,6 +42,17 @@ p {
     font-size: large;
   }
 
+  .home__title {
+    font-size: 30px;
+  }
+  .home__button {
+    position: absolute;
+    top: auto;
+    right: 350px;
+    padding: 10px;
+    margin-bottom: 0px;
+  }
+
   .menuContainer {
     flex-direction: column;
   }
@@ -54,6 +65,9 @@ p {
   }
   .menuContainer .menu__buttons {
     flex-direction: column;
+    padding: 20px 30px;
+    margin-bottom: 30px;
+    font-size: large;
   }
 
   .infoContainer .info {
@@ -66,6 +80,50 @@ p {
   .infoContainer .info__instruction {
     margin-top: 20px;
     font-size: 16px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .home__button {
+    right: 630px;
+    font-size: 30px;
+  }
+
+  footer .footer__links {
+    margin-left: 300px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  button {
+    font-size: 25px;
+  }
+
+  .home__title {
+    margin-bottom: 60px;
+  }
+  .home__button {
+    right: 850px;
+    font-size: 30px;
+  }
+
+  .infoContainer .info {
+    width: 30vw !important;
+    height: 30vw !important;
+  }
+  .infoContainer .info__heading {
+    margin: 10px;
+  }
+  .infoContainer .info__instruction {
+    margin: 40px;
+    font-size: 17px;
+  }
+
+  .menuContainer .menu {
+    height: 400px !important;
+    width: 400px !important;
+  }
+
+  footer .footer__links {
+    margin-left: 600px;
   }
 }
 @media screen and (min-width: 1440px) {
