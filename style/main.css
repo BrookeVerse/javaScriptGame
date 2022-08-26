@@ -35,6 +35,50 @@ p {
   font-size: small;
 }
 
+.home {
+  display: flex;
+  margin: 30px;
+  justify-content: space-around;
+  flex-direction: row-reverse;
+}
+
+.menucontainer .menu {
+  display: flex;
+  flex-direction: column;
+  width: 50vw;
+  height: 50vw;
+  margin: auto;
+  padding: auto;
+  border-radius: 20px;
+  background-color: #f08080;
+  box-shadow: 5px 2px 5px 1px #595953;
+}
+.menucontainer .menu__heading {
+  margin-top: 20px;
+}
+.menucontainer .menu__buttons {
+  display: flex;
+  margin: auto;
+}
+
+.infoContainer .info {
+  display: flex;
+  flex-direction: column;
+  width: 60vw;
+  height: 60vw;
+  margin: auto;
+  padding: auto;
+  border-radius: 20px;
+  background-color: #f08080;
+  box-shadow: 5px 2px 5px 1px #595953;
+}
+.infoContainer .info__heading {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-weight: 200;
+  text-decoration: underline;
+}
+
 @media screen and (min-width: 425px) {
   button {
     padding: 20px 30px;
@@ -184,48 +228,8 @@ p {
     margin-left: 1400px;
   }
 }
-.home {
-  display: flex;
-  margin: 30px;
-  justify-content: space-around;
-  flex-direction: row-reverse;
-}
-
-.menucontainer .menu {
-  display: flex;
-  flex-direction: column;
-  width: 50vw;
-  height: 50vw;
-  margin: auto;
-  padding: auto;
-  border-radius: 20px;
-  background-color: #f08080;
-  box-shadow: 5px 2px 5px 1px #595953;
-}
-.menucontainer .menu__heading {
-  margin-top: 20px;
-}
-.menucontainer .menu__buttons {
-  display: flex;
-  margin: auto;
-}
-
-.infoContainer .info {
-  display: flex;
-  flex-direction: column;
-  width: 60vw;
-  height: 60vw;
-  margin: auto;
-  padding: auto;
-  border-radius: 20px;
-  background-color: #f08080;
-  box-shadow: 5px 2px 5px 1px #595953;
-}
-.infoContainer .info__heading {
-  margin-top: 10px;
-  margin-bottom: 10px;
-  font-weight: 200;
-  text-decoration: underline;
+.home__refresh {
+  position: absolute;
 }
 
 .game__img {
@@ -263,6 +267,10 @@ p {
   left: 130px;
 }
 
+.input .input__code {
+  position: absolute;
+}
+
 .clueContainer .clue {
   display: flex;
   flex-direction: column;
@@ -288,5 +296,93 @@ p {
 
 .input .input__code {
   position: absolute;
-  left: 160px;
+  left: 190px;
+}
+
+@media screen and (min-width: 425px) {
+  .home__refresh {
+    right: 300px;
+    top: 20px;
+  }
+  .home__title {
+    margin-bottom: 25px;
+    font-size: 25px;
+  }
+
+  .game__img {
+    width: 70vh;
+    height: 70vw;
+  }
+  .game__refresh {
+    font-size: 60px;
+  }
+  .game__marty {
+    right: 270px;
+    bottom: 50px;
+  }
+  .game__clueOne {
+    right: 290px;
+    top: 230px;
+  }
+  .game__clueTwo {
+    top: 270px;
+    left: 290px;
+  }
+  .game__clueThree {
+    top: 295px;
+    left: 150px;
+  }
+  .game__clueFour {
+    top: 160px;
+    left: 180px;
+  }
+
+  .input__code {
+    font-size: 17px;
+    left: 402px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .home {
+    justify-content: center;
+  }
+  .home__refresh {
+    right: 600px;
+    top: 20px;
+  }
+  .home__title {
+    margin-bottom: 25px;
+    margin-left: 20px;
+    font-size: 40px;
+  }
+
+  .game__img {
+    width: 120vh;
+    height: 50vw;
+  }
+  .game__marty {
+    right: 490px;
+    top: 530px;
+  }
+  .game__clueOne {
+    right: 530px;
+    top: 250px;
+  }
+  .game__clueTwo {
+    top: 320px;
+    left: 550px;
+  }
+  .game__clueThree {
+    top: 348px;
+    left: 290px;
+  }
+  .game__clueFour {
+    top: 172px;
+    left: 345px;
+  }
+
+  .input__code {
+    font-size: 20px;
+    margin-left: 240px;
+  }
 }

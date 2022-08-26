@@ -50,3 +50,187 @@
     }
   }
 }
+
+//Responsive Area
+@media screen and (min-width: 425px) {
+  button {
+    padding: 20px 30px;
+    margin-bottom: 30px;
+    font-size: large;
+  }
+  .home {
+    &__title {
+      font-size: 30px;
+    }
+    &__button {
+      position: absolute;
+      top: auto;
+      right: 350px;
+      padding: 10px;
+      margin-bottom: 0px;
+    }
+  }
+  .menuContainer {
+    flex-direction: column;
+    .menu {
+      height: 300px !important;
+      width: 300px !important;
+
+      &__heading {
+        font-size: 30px;
+      }
+      &__buttons {
+        flex-direction: column;
+        padding: 20px 30px;
+        margin-bottom: 30px;
+        font-size: large;
+      }
+    }
+  }
+  .infoContainer {
+    .info {
+      height: 250px !important;
+      width: 250px !important;
+
+      &__heading {
+        font-size: 30px;
+      }
+
+      &__instruction {
+        margin-top: 20px;
+        font-size: 16px;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .home {
+    &__button {
+      right: 630px;
+      font-size: 30px;
+    }
+  }
+  footer {
+    .footer__links {
+      margin-left: 300px;
+    }
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  button {
+    font-size: 25px;
+  }
+
+  .home {
+    &__title {
+      margin-bottom: 60px;
+    }
+    &__button {
+      right: 850px;
+      font-size: 30px;
+    }
+  }
+  .infoContainer {
+    .info {
+      width: 30vw !important;
+      height: 30vw !important;
+
+      &__heading {
+        margin: 10px;
+      }
+
+      &__instruction {
+        margin: 40px;
+        font-size: 17px;
+      }
+    }
+  }
+  .menuContainer {
+    .menu {
+      height: 400px !important;
+      width: 400px !important;
+    }
+  }
+  footer {
+    .footer__links {
+      margin-left: 600px;
+    }
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .home {
+    &__title {
+      margin-bottom: 40px;
+    }
+    &__button {
+      right: 1300px;
+    }
+  }
+
+  .menuContainer {
+    .menu {
+      height: 400px !important;
+      width: 400px !important;
+      margin-top: 30px;
+    }
+  }
+  .infoContainer {
+    .info {
+      width: 25vw !important;
+      height: 25vw !important;
+    }
+  }
+  footer {
+    .footer__note {
+      font-size: larger;
+    }
+
+    .footer__links {
+      margin-left: 950px;
+    }
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  button {
+    font-size: 40px;
+  }
+
+  .home {
+    &__title {
+      margin-bottom: 110px;
+      font-size: 90px;
+    }
+
+    &__button {
+      right: 1700px;
+      bottom: 850px;
+      font-size: 50px;
+    }
+  }
+  .menuContainer {
+    .menu {
+      width: 30vw !important;
+      height: 50vh !important;
+
+      &__heading {
+        font-size: 80px;
+      }
+    }
+  }
+  .infoContainer {
+    .info {
+      width: 20vw !important;
+      height: 35vh !important;
+    }
+  }
+
+  footer {
+    .footer__links {
+      margin-left: 1400px;
+    }
+  }
+}

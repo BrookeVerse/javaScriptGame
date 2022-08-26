@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="./style/main.css" />
     <title>Save My Mallows!</title>
   </head>
-  <body">
+  <body>
     <!--This is the game page-->
     <heading class="home">
       <h1 class="home__title">Save My Mallows</h1>
@@ -15,15 +15,17 @@
     <main>
       <div class="game">
         <img src="./assets/gameBackground.PNG" alt="Game Board" class="game__img" />
-        <button class="game__clueOne">Clue One</button>
-        <button class="game__clueTwo">Clue Two</button>
-        <button class="game__clueThree">Clue Three</button>
-        <button class="game__clueFour">Clue Four</button>
-        <div class="input">
-            <input type="number" placeholder="Exit Code Here!" class="input__code">
+        <div class="game__buttons">
+          <button class="game__clueOne">1</button>
+          <button class="game__clueTwo">2</button>
+          <button class="game__clueThree">3</button>
+          <button class="game__clueFour">4</button>
         </div>
-    </div>
-    <img src="./assets/martyMarshmallow.png" alt="Marty Marshmallow" class="game__marty" />
+        <div class="input">
+          <input type="number" placeholder="Exit Code Here!" class="input__code" />
+        </div>
+      </div>
+      <img src="./assets/martyMarshmallow.png" alt="Marty Marshmallow" class="game__marty" />
       <script src="./game.js" type="module"></script>
     </main>
   </body>
