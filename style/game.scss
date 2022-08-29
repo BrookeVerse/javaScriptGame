@@ -3,6 +3,11 @@
 .home {
   &__refresh {
     position: absolute;
+    right: 250px;
+    top: 40px;
+  }
+  &__title {
+    margin-left: 60px;
   }
 }
 
@@ -24,27 +29,31 @@
   }
   &__clueOne {
     position: absolute;
-    top: 200px;
-    right: 200px;
-    //opacity: 0%;
+    top: 195px;
+    right: 210px;
+    opacity: 0%;
   }
   &__clueTwo {
     position: absolute;
-    top: 200px;
-    left: 260px;
-    //opacity: 0%;
+    top: 235px;
+    left: 274px;
+    opacity: 0%;
   }
   &__clueThree {
     position: absolute;
-    top: 250px;
-    left: 120px;
-    //opacity: 0%;
+    top: 245px;
+    left: 140px;
+    opacity: 0%;
   }
   &__clueFour {
     position: absolute;
     top: 160px;
-    left: 130px;
-    //opacity: 0%;
+    left: 170px;
+    opacity: 0%;
+  }
+  &__happyMarty {
+    width: 40vw;
+    height: 70vh;
   }
 }
 
@@ -89,10 +98,75 @@
 }
 
 //Responsive Area
+
+@media screen and (min-width: 375px) {
+  .home {
+    &__refresh {
+      right: 280px;
+      top: 30px;
+    }
+
+    &__title {
+      margin-bottom: 25px;
+      font-size: 25px;
+    }
+  }
+
+  .game {
+    &__img {
+      width: 70vh;
+      height: 70vw;
+    }
+
+    &__refresh {
+      font-size: 60px;
+    }
+    &__marty {
+      right: 235px;
+      bottom: 120px;
+    }
+
+    &__clueOne {
+      right: 250px;
+      top: 200px;
+    }
+
+    &__clueTwo {
+      top: 250px;
+      left: 320px;
+    }
+
+    &__clueThree {
+      top: 265px;
+      left: 170px;
+    }
+
+    &__clueFour {
+      top: 145px;
+      left: 200px;
+    }
+  }
+  .input {
+    &__code {
+      font-size: 17px;
+    }
+  }
+  .clueContainer {
+    .clue {
+      &__heading {
+        font-size: 25px;
+      }
+      &__info {
+        margin-top: 3px;
+        font-size: 15px;
+      }
+    }
+  }
+}
+
 @media screen and (min-width: 425px) {
   .home {
     &__refresh {
-      justify-content: center;
       right: 300px;
       top: 20px;
     }

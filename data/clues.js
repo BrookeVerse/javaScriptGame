@@ -6,11 +6,16 @@ export const cluesArray = [
   },
   {
     title: "Clue Two",
+    clue: "I have keys but no lock, I have a space but no room, You can enter but can't go outside, I have a window but but I am not a house. What am I?",
+    number: 8,
+  },
+  {
+    title: "Clue Three",
     clue: "A necessity to some, a treasure to many. I'm best enjoyed amoung some pleasant company. Some like me hot, some like me cold. Some prefer me mild, some like me bold. What am I?",
     number: 9,
   },
   {
-    title: "Clue Three",
+    title: "Clue Four",
     clue: "I'm often used at night, but i'm not a pillow. I'm usually made of glass and metal, but i'm not a mirror. I'm bright even though I don't have any brains. What am i?",
     number: 6,
   },

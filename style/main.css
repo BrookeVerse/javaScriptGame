@@ -45,8 +45,8 @@ p {
 .menucontainer .menu {
   display: flex;
   flex-direction: column;
-  width: 50vw;
-  height: 50vw;
+  width: 60vw;
+  height: 60vw;
   margin: auto;
   padding: auto;
   border-radius: 20px;
@@ -58,6 +58,7 @@ p {
 }
 .menucontainer .menu__buttons {
   display: flex;
+  flex-direction: column;
   margin: auto;
 }
 
@@ -65,7 +66,7 @@ p {
   display: flex;
   flex-direction: column;
   width: 60vw;
-  height: 60vw;
+  height: 65vw;
   margin: auto;
   padding: auto;
   border-radius: 20px;
@@ -101,8 +102,8 @@ p {
     flex-direction: column;
   }
   .menuContainer .menu {
-    height: 300px !important;
-    width: 300px !important;
+    height: 350px;
+    width: 300px;
   }
   .menuContainer .menu__heading {
     font-size: 30px;
@@ -114,10 +115,6 @@ p {
     font-size: large;
   }
 
-  .infoContainer .info {
-    height: 250px !important;
-    width: 250px !important;
-  }
   .infoContainer .info__heading {
     font-size: 30px;
   }
@@ -130,6 +127,18 @@ p {
   .home__button {
     right: 630px;
     font-size: 30px;
+  }
+
+  .infoContainer .info {
+    width: 40vw;
+    height: 45vh;
+  }
+  .infoContainer .info__heading {
+    font-size: 30px;
+  }
+  .infoContainer .info__instruction {
+    margin-top: 20px;
+    font-size: 16px;
   }
 
   footer .footer__links {
@@ -149,10 +158,6 @@ p {
     font-size: 30px;
   }
 
-  .infoContainer .info {
-    width: 30vw !important;
-    height: 30vw !important;
-  }
   .infoContainer .info__heading {
     margin: 10px;
   }
@@ -213,15 +218,21 @@ p {
 
   .menuContainer .menu {
     width: 30vw !important;
-    height: 50vh !important;
+    height: 55vh !important;
   }
   .menuContainer .menu__heading {
     font-size: 80px;
   }
 
+  .infoContainer {
+    margin-top: 250px;
+  }
   .infoContainer .info {
-    width: 20vw !important;
+    width: 40vw;
     height: 35vh !important;
+  }
+  .infoContainer .info__instruction {
+    font-size: 25px;
   }
 
   footer .footer__links {
@@ -230,6 +241,11 @@ p {
 }
 .home__refresh {
   position: absolute;
+  right: 250px;
+  top: 40px;
+}
+.home__title {
+  margin-left: 60px;
 }
 
 .game__img {
@@ -248,23 +264,31 @@ p {
 }
 .game__clueOne {
   position: absolute;
-  top: 200px;
-  right: 200px;
+  top: 195px;
+  right: 210px;
+  opacity: 0%;
 }
 .game__clueTwo {
   position: absolute;
-  top: 200px;
-  left: 260px;
+  top: 235px;
+  left: 274px;
+  opacity: 0%;
 }
 .game__clueThree {
   position: absolute;
-  top: 250px;
-  left: 120px;
+  top: 245px;
+  left: 140px;
+  opacity: 0%;
 }
 .game__clueFour {
   position: absolute;
   top: 160px;
-  left: 130px;
+  left: 170px;
+  opacity: 0%;
+}
+.game__happyMarty {
+  width: 40vw;
+  height: 70vh;
 }
 
 .input .input__code {
@@ -299,9 +323,58 @@ p {
   left: 190px;
 }
 
+@media screen and (min-width: 375px) {
+  .home__refresh {
+    right: 280px;
+    top: 30px;
+  }
+  .home__title {
+    margin-bottom: 25px;
+    font-size: 25px;
+  }
+
+  .game__img {
+    width: 70vh;
+    height: 70vw;
+  }
+  .game__refresh {
+    font-size: 60px;
+  }
+  .game__marty {
+    right: 235px;
+    bottom: 120px;
+  }
+  .game__clueOne {
+    right: 250px;
+    top: 200px;
+  }
+  .game__clueTwo {
+    top: 250px;
+    left: 320px;
+  }
+  .game__clueThree {
+    top: 265px;
+    left: 170px;
+  }
+  .game__clueFour {
+    top: 145px;
+    left: 200px;
+  }
+
+  .input__code {
+    font-size: 17px;
+  }
+
+  .clueContainer .clue__heading {
+    font-size: 25px;
+  }
+  .clueContainer .clue__info {
+    margin-top: 3px;
+    font-size: 15px;
+  }
+}
 @media screen and (min-width: 425px) {
   .home__refresh {
-    justify-content: center;
     right: 300px;
     top: 20px;
   }
