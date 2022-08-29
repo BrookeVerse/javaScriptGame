@@ -287,8 +287,8 @@ p {
   opacity: 0%;
 }
 .game__happyMarty {
-  width: 40vw;
-  height: 70vh;
+  width: 110vw;
+  height: 60vh;
 }
 
 .input .input__code {
@@ -410,6 +410,10 @@ p {
     top: 160px;
     left: 180px;
   }
+  .game__happyMarty {
+    width: 110vw;
+    height: 80vh;
+  }
 
   .input__code {
     font-size: 17px;
@@ -457,6 +461,10 @@ p {
   .game__clueFour {
     top: 172px;
     left: 345px;
+  }
+  .game__happyMarty {
+    width: 70vw;
+    height: 80vh;
   }
 
   .input__code {
@@ -514,6 +522,10 @@ p {
     top: 160px;
     left: 470px;
   }
+  .game__happyMarty {
+    width: 70vw;
+    height: 90vh;
+  }
 
   .input__code {
     font-size: 30px;
@@ -552,6 +564,10 @@ p {
   .game__clueFour {
     top: 170px;
     left: 674px;
+  }
+  .game__happyMarty {
+    width: 50vw;
+    height: 90vh;
   }
 
   .input__code {
@@ -597,6 +613,10 @@ p {
     font-size: 70px;
     top: 211px;
     left: 916px;
+  }
+  .game__happyMarty {
+    width: 40vw;
+    height: 80vh;
   }
 
   .input__code {

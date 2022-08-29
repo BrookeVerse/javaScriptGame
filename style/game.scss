@@ -52,8 +52,8 @@
     opacity: 0%;
   }
   &__happyMarty {
-    width: 40vw;
-    height: 70vh;
+    width: 110vw;
+    height: 60vh;
   }
 }
 
@@ -210,6 +210,10 @@
       top: 160px;
       left: 180px;
     }
+    &__happyMarty {
+      width: 110vw;
+      height: 80vh;
+    }
   }
   .input {
     &__code {
@@ -272,6 +276,10 @@
     &__clueFour {
       top: 172px;
       left: 345px;
+    }
+    &__happyMarty {
+      width: 70vw;
+      height: 80vh;
     }
   }
   .input__code {
@@ -338,6 +346,10 @@
       top: 160px;
       left: 470px;
     }
+    &__happyMarty {
+      width: 70vw;
+      height: 90vh;
+    }
   }
   .input__code {
     font-size: 30px;
@@ -386,6 +398,10 @@
     &__clueFour {
       top: 170px;
       left: 674px;
+    }
+    &__happyMarty {
+      width: 50vw;
+      height: 90vh;
     }
   }
   .input__code {
@@ -441,6 +457,10 @@
       font-size: $bigfontsize;
       top: 211px;
       left: 916px;
+    }
+    &__happyMarty {
+      width: 40vw;
+      height: 80vh;
     }
   }
   .input__code {

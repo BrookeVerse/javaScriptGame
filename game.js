@@ -25,6 +25,7 @@ const openClue = (clue) => {
 cluesArray.forEach(() => {
   clueOne.addEventListener("click", () => {
     container.innerHTML = "";
+    inputContainer.innerHTML = "";
     const clue = cluesArray[1];
     container.innerHTML = openClue(clue);
   });
@@ -34,6 +35,7 @@ cluesArray.forEach(() => {
 cluesArray.forEach(() => {
   clueTwo.addEventListener("click", () => {
     container.innerHTML = "";
+    inputContainer.innerHTML = "";
     const clue = cluesArray[2];
     container.innerHTML = openClue(clue);
   });
@@ -43,6 +45,7 @@ cluesArray.forEach(() => {
 cluesArray.forEach(() => {
   clueThree.addEventListener("click", () => {
     container.innerHTML = "";
+    inputContainer.innerHTML = "";
     const clue = cluesArray[3];
     container.innerHTML = openClue(clue);
   });
@@ -52,6 +55,7 @@ cluesArray.forEach(() => {
 cluesArray.forEach(() => {
   clueFour.addEventListener("click", () => {
     container.innerHTML = "";
+    inputContainer.innerHTML = "";
     const clue = cluesArray[4];
     container.innerHTML = openClue(clue);
   });
@@ -76,8 +80,8 @@ inputBox.addEventListener("input", () => {
 
 //function is adding a winner screen
 const winnerScreen = () => {
-  return `<div class= "clue">
-  <img src="./assets/happyMarty.png" alt="Marty Marshmallow" class="game__happyMarty" />
+  return `<div class= "winnerScreen">
+    <img src="./assets/happyMarty.png" alt="Marty Marshmallow" class="game__happyMarty" />
   </div>`;
 };
 
