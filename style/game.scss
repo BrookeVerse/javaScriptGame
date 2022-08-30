@@ -170,22 +170,8 @@
       right: 300px;
       top: 20px;
     }
-
-    &__title {
-      margin-bottom: 25px;
-      font-size: 25px;
-    }
   }
-
   .game {
-    &__img {
-      width: 70vh;
-      height: 70vw;
-    }
-
-    &__refresh {
-      font-size: 60px;
-    }
     &__marty {
       right: 270px;
       bottom: 50px;
@@ -228,7 +214,6 @@
       }
       &__info {
         margin-top: 20px;
-        font-size: 15px;
       }
     }
   }

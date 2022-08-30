@@ -9,18 +9,7 @@ const refreshPress = document.querySelector(".game__marty");
 const martyContainer = document.querySelector(".game__martyContainer");
 const inputBox = document.querySelector(".input__code");
 const inputContainer = document.querySelector(".input");
-//function for content to change
-
-const openClue = (clue) => {
-  return `<div class="clueContainer">
-    <div class="clue"> 
-        <h3 class="clue__heading">${clue.title}</h3>
-        <p class="clue__info">${clue.clue}</p>
-        <p class="clue__number">${clue.number}</p> 
-    </div>
-</div>`;
-};
-
+const gameboard = document.querySelector(".game__img");
 //Function to collect data from the object array
 cluesArray.forEach(() => {
   clueOne.addEventListener("click", () => {
@@ -81,13 +70,46 @@ inputBox.addEventListener("input", () => {
 //function is adding a winner screen
 const winnerScreen = () => {
   return `<div class= "winnerScreen">
-    <img src="./assets/happyMarty.png" alt="Marty Marshmallow" class="game__happyMarty" />
+  <img src="./assets/happyMarty.png" alt="Marty Marshmallow" class="game__happyMarty" />
   </div>`;
 };
 
 //function that add html to make a button that takes you back to the home screen
 const exitDoor = () => {
   return `<div class= "exit">
-         <a href="./index.html"><button class="home__refresh">Exit Here!</button></a>
-    </div>`;
+  <a href="./index.html"><button class="home__refresh">Exit Here!</button></a>
+  </div>`;
+};
+
+//function for content to change
+const openClue = (clue) => {
+  return `<div class="clueContainer">
+    <div class="clue"> 
+        <h3 class="clue__heading">${clue.title}</h3>
+        <p class="clue__info">${clue.clue}</p>
+        <p class="clue__number">${clue.number}</p> 
+    </div>
+</div>`;
+};
+
+//function that will have three clicks and cause something
+const wrongClick = () => {
+  inputContainer.innerHTML = "";
+  container.innerHTML = "";
+  martyContainer.innerHTML = "";
+  container.innerHTML += openHattie();
+};
+
+let click = 0;
+gameboard.addEventListener("click", () => {
+  click += 1;
+  if (click === 3) {
+    wrongClick();
+  }
+});
+
+const openHattie = () => {
+  return `<div class="hattieContainer">
+  <img src="./assets/happyMarty.png" alt="Hattie Hot-Choclate" class="game__hattie" />
+</div>`;
 };

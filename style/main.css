@@ -133,13 +133,6 @@ p {
     width: 40vw;
     height: 45vh;
   }
-  .infoContainer .info__heading {
-    font-size: 30px;
-  }
-  .infoContainer .info__instruction {
-    margin-top: 20px;
-    font-size: 16px;
-  }
 
   footer .footer__links {
     margin-left: 300px;
@@ -184,14 +177,14 @@ p {
   }
 
   .menuContainer .menu {
-    height: 400px !important;
-    width: 400px !important;
+    height: 400px;
+    width: 400px;
     margin-top: 30px;
   }
 
   .infoContainer .info {
-    width: 25vw !important;
-    height: 25vw !important;
+    width: 25vw;
+    height: 50vh;
   }
 
   footer .footer__note {
@@ -217,7 +210,7 @@ p {
   }
 
   .menuContainer .menu {
-    width: 30vw !important;
+    width: 30vw;
     height: 55vh !important;
   }
   .menuContainer .menu__heading {
@@ -378,18 +371,7 @@ p {
     right: 300px;
     top: 20px;
   }
-  .home__title {
-    margin-bottom: 25px;
-    font-size: 25px;
-  }
 
-  .game__img {
-    width: 70vh;
-    height: 70vw;
-  }
-  .game__refresh {
-    font-size: 60px;
-  }
   .game__marty {
     right: 270px;
     bottom: 50px;
@@ -425,7 +407,6 @@ p {
   }
   .clueContainer .clue__info {
     margin-top: 20px;
-    font-size: 15px;
   }
 }
 @media screen and (min-width: 768px) {
