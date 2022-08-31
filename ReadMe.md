@@ -1,6 +1,8 @@
 <h1 align="center"><u>Save My Mallows</u></h1>
 <br>
-<img align="center" src="./assets/Menu.JPG" alt="Menu"/>
+<p align="center">
+<img width="200" src="./assets/Menu.JPG" alt="Menu"/>
+</p>
 <br>
 <h3 align="center"><u>About</u></h3>
 <p align="center">This project is a *JavaScript* built game. In the game you are helping Marty the Marshmallow escape a room, Hattie the Hot Choclate has trapped him in. You will use clues to find a number combination that will let you escape.</p>
@@ -21,14 +23,16 @@
 <br>
 <h3 align="center"><u>Features to be added</u></h3>
 <br>
-<ul align="center">
-*<li align="center"> Resolve responsive issues.</li>
-*<li align="center"> Add another level.</li>
-*<li align="center">Add a difficulty that changes the riddles to be harder</li>
-</ul>
+<br>
+<p align="center">Resolve responsive issues.<br>
+Add another level.<br>
+Add a difficulty that changes the riddles to be harder<br>
+</p>
 <br> 
 <br>
 <h3 align="center"><u>Credit</u></h3>
 <br>
 <p align="center">This project was built as part of my training with _nology, so part of the credit goes to the coaches that have trained me on the usage and fundamentals of HTML, CSS and JavaScript.</p>
-<img align="center" src="./assets/You Lost.JPG" alt="Game Over Screen"/>
+<p align="center">
+<img width="200" src="./assets/You Lost.JPG" alt="Game Over Screen"/>
+</p>
