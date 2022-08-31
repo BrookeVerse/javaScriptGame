@@ -1,17 +1,43 @@
 import { cluesArray } from "./data/clues.js";
-//Option Button
-//When its clicked changes HTML to show an option to change the sound.
+
+//Grabbing DOM elements to use for functions
 const infoButton = document.querySelector(".menu__infoButton");
 const clueButton = document.querySelector(".menu__clueButton");
 const menuContent = document.querySelector(".menuContainer");
 const homeButton = document.querySelector(".home__Button");
-//grabbing the button
 
-//Home Button Operation, refreshes the page
+//This listens for when the home button is blicked to refresh the page
 homeButton.addEventListener("click", () => {
   window.location.reload();
 });
 
+//This listens for when the clue button is clicked and change DOM HTML
+cluesArray.forEach(() => {
+  clueButton.addEventListener("click", () => {
+    menuContent.innerHTML = "";
+    const clue = cluesArray[0];
+    menuContent.innerHTML = openClue(clue);
+  });
+});
+
+//This listens for when the info button is clicked and change the DOM HTML
+infoButton.addEventListener("click", () => {
+  menuContent.innerHTML = "";
+  menuContent.innerHTML = openInfoBox();
+});
+
+//This function will change DOM HTML to create the clue Cards using the clueArray Objects
+const openClue = (clue) => {
+  return `<div class="clueContainer">
+    <div class="clue"> 
+        <h3 class="clue__heading">${clue.title}</h3>
+        <p class="clue__info">${clue.clue}</p>
+        <p class="clue__number">${clue.number}</p> 
+    </div>
+</div>`;
+};
+
+//This function will change DOM HTML to create the info card
 const openInfoBox = () => {
   return `<div class="infoContainer">
         <div class="info"> 
@@ -24,32 +50,3 @@ const openInfoBox = () => {
         </div>
     </div>`;
 };
-
-//This will change the HTML to show a clue from the Object Array
-const openClue = (clue) => {
-  return `<div class="clueContainer">
-    <div class="clue"> 
-        <h3 class="clue__heading">${clue.title}</h3>
-        <p class="clue__info">${clue.clue}</p>
-        <p class="clue__number">${clue.number}</p> 
-    </div>
-</div>`;
-};
-
-//Function to collect data from the object array
-cluesArray.forEach(() => {
-  clueButton.addEventListener("click", () => {
-    menuContent.innerHTML = "";
-    const clue = cluesArray[0];
-    menuContent.innerHTML = openClue(clue);
-  });
-});
-
-//function that will change the html to open a new box that will
-//show you the info
-
-infoButton.addEventListener("click", () => {
-  menuContent.innerHTML = "";
-  menuContent.innerHTML = openInfoBox();
-});
-//An event listener that will open the info box
