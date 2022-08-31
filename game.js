@@ -10,6 +10,7 @@ const martyContainer = document.querySelector(".game__martyContainer");
 const inputBox = document.querySelector(".input__code");
 const inputContainer = document.querySelector(".input");
 const gameboard = document.querySelector(".game__img");
+const gameHeading = document.querySelector(".home__title");
 //Function to collect data from the object array
 cluesArray.forEach(() => {
   clueOne.addEventListener("click", () => {
@@ -62,6 +63,8 @@ inputBox.addEventListener("input", () => {
     inputContainer.innerHTML = "";
     container.innerHTML = "";
     martyContainer.innerHTML = "";
+    gameHeading.innerHTML = "You Won! Marty is Free!";
+    gameHeading.style.color = "#E7D27C";
     container.innerHTML += winnerScreen();
     inputContainer.innerHTML += exitDoor();
   }
@@ -93,10 +96,13 @@ const openClue = (clue) => {
 };
 
 //function that will have three clicks and cause something
+//Move this to functions area.
 const wrongClick = () => {
   inputContainer.innerHTML = "";
   container.innerHTML = "";
   martyContainer.innerHTML = "";
+  gameHeading.innerHTML = "You Lost! Try Again.";
+  gameHeading.style.color = "#ff6961";
   container.innerHTML += openHattie();
 };
 
@@ -110,6 +116,6 @@ gameboard.addEventListener("click", () => {
 
 const openHattie = () => {
   return `<div class="hattieContainer">
-  <img src="./assets/happyMarty.png" alt="Hattie Hot-Choclate" class="game__hattie" />
+  <img src="./assets/hattieOver.png" alt="Hattie Hot-Choclate" class="game__hattie" />
 </div>`;
 };

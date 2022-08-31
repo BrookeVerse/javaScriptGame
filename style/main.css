@@ -41,6 +41,9 @@ p {
   justify-content: space-around;
   flex-direction: row-reverse;
 }
+.home__title {
+  text-shadow: 5px 5px white;
+}
 
 .menucontainer .menu {
   display: flex;

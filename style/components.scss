@@ -5,6 +5,10 @@
   margin: 30px;
   justify-content: space-around;
   flex-direction: row-reverse;
+
+  &__title {
+    text-shadow: 5px 5px white;
+  }
 }
 
 .menucontainer {
