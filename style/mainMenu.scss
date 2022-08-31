@@ -1,5 +1,5 @@
 @use "./base.scss" as *;
-
+//This area styles the top of the page
 .home {
   display: flex;
   margin: 30px;
@@ -10,7 +10,7 @@
     text-shadow: 5px 5px white;
   }
 }
-
+//This area styles the Main Menu
 .menucontainer {
   .menu {
     display: flex;
@@ -34,12 +34,12 @@
     }
   }
 }
-
+//This area styles the info screen
 .infoContainer {
   .info {
     display: flex;
     flex-direction: column;
-    width: 60vw;
+    width: 50vw;
     height: 65vw;
     margin: auto;
     padding: auto;

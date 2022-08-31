@@ -1,3 +1,4 @@
+//This page is using the other SCSS files to style the pages
 @use "./base.scss" as *;
-@use "./components.scss" as *;
+@use "./mainMenu.scss" as *;
 @use "./game.scss" as *;

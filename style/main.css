@@ -9,7 +9,7 @@
 }
 
 body {
-  background-image: url("./sweetsBackground.png");
+  background-image: url("../assets/sweetsBackground.png");
   background-repeat: no-repeat;
 }
 
@@ -68,7 +68,7 @@ p {
 .infoContainer .info {
   display: flex;
   flex-direction: column;
-  width: 60vw;
+  width: 50vw;
   height: 65vw;
   margin: auto;
   padding: auto;
@@ -285,10 +285,8 @@ p {
 .game__happyMarty {
   width: 110vw;
   height: 60vh;
-}
-
-.input .input__code {
-  position: absolute;
+  animation: shake 0.5s;
+  animation-iteration-count: infinite;
 }
 
 .clueContainer .clue {
@@ -319,6 +317,16 @@ p {
   left: 190px;
 }
 
+.hattieContainer .game__hattie {
+  animation: shake 0.5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes shake {
+  40% {
+    transform: translate(1px, -1px) rotate(1deg);
+  }
+}
 @media screen and (min-width: 375px) {
   .home__refresh {
     right: 280px;

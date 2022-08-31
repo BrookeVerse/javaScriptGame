@@ -4,6 +4,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./style/main.css" />
+    <link rel="icon" type="icon" href="./assets/martyMarshmallow2.png" />
     <title>Save My Mallows!</title>
   </head>
   <body>
@@ -12,6 +13,7 @@
       <h1 class="home__title">Save My Mallows</h1>
       <a href="./index.html"><button class="home__refresh">Home</button></a>
     </heading>
+    <!--This area is containing the game and where most DOM HTML is being changed-->
     <main>
       <div class="game">
         <img src="./assets/gameBackground.PNG" alt="Game Board" class="game__img" />
@@ -22,9 +24,11 @@
           <button class="game__clueFour">4</button>
         </div>
       </div>
+      <!--This is the input area to escape the room-->
       <div class="input">
         <input type="number" placeholder="Exit Code Here!" class="input__code" />
       </div>
+      <!--This is the Marty image container so you can refresh the page-->
       <div class="game__martyContainer">
         <img src="./assets/martyMarshmallow.png" alt="Marty Marshmallow" class="game__marty" />
       </div>

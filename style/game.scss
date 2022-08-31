@@ -1,5 +1,5 @@
 @use "./base.scss" as *;
-
+//This area styles the top of the game page
 .home {
   &__refresh {
     position: absolute;
@@ -10,7 +10,7 @@
     margin-left: 60px;
   }
 }
-
+//This area styles the game area, and End Game Screens
 .game {
   &__img {
     position: relative;
@@ -54,15 +54,11 @@
   &__happyMarty {
     width: 110vw;
     height: 60vh;
+    animation: shake 0.5s;
+    animation-iteration-count: infinite;
   }
 }
-
-.input {
-  .input__code {
-    position: absolute;
-  }
-}
-
+//This area styles the clue cards
 .clueContainer {
   .clue {
     display: flex;
@@ -89,16 +85,27 @@
     }
   }
 }
-
+//This area styles the input box
 .input {
   .input__code {
     position: absolute;
     left: 190px;
   }
 }
-
+//This area stles the Hattie container
+.hattieContainer {
+  .game__hattie {
+    animation: shake 0.5s;
+    animation-iteration-count: infinite;
+  }
+}
+//This is telling the animation how much to rotate
+@keyframes shake {
+  40% {
+    transform: translate(1px, -1px) rotate(1deg);
+  }
+}
 //Responsive Area
-
 @media screen and (min-width: 375px) {
   .home {
     &__refresh {

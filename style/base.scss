@@ -6,10 +6,10 @@ $tertiarycolour: #f08080;
 $fourthcolour: #fbfaf5;
 
 $primaryfont: Fredoka One, arial, comic;
-$secondaryfont: Dyna Puff, arial, comic;
 
 $bigfontsize: 70px;
 
+//This area styles all elements
 * {
   padding: 0;
   margin: 0;
@@ -18,12 +18,12 @@ $bigfontsize: 70px;
   font-family: $primaryfont;
   color: $secondarycolour;
 }
-
+//This area is styling the background
 body {
-  background-image: url("./sweetsBackground.png");
+  background-image: url("../assets/sweetsBackground.png");
   background-repeat: no-repeat;
 }
-
+//This area styles the buttons
 button {
   border-radius: 20px;
   border: 2px solid $secondarycolour;
@@ -31,7 +31,7 @@ button {
   background: $primarycolour;
   box-shadow: 5px 2px 5px 1px #595953;
 }
-
+//This area styles the footer
 footer {
   position: absolute;
   bottom: 10px;
@@ -41,7 +41,7 @@ footer {
   display: flex;
   justify-content: space-evenly;
 }
-
+//This area styles all paragraph areas
 p {
   font-size: small;
 }

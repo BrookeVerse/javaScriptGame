@@ -1,7 +1,7 @@
 <h1 align="center"><u>Save My Mallows</u></h1>
 <br>
 <p align="center">
-<img width="200" src="./assets/Menu.JPG" alt="Menu"/>
+<img width="400" src="./assets/Menu.JPG" alt="Menu"/>
 </p>
 <br>
 <h3 align="center"><u>About</u></h3>
@@ -34,5 +34,5 @@ Add a difficulty that changes the riddles to be harder<br>
 <br>
 <p align="center">This project was built as part of my training with _nology, so part of the credit goes to the coaches that have trained me on the usage and fundamentals of HTML, CSS and JavaScript.</p>
 <p align="center">
-<img width="200" src="./assets/You Lost.JPG" alt="Game Over Screen"/>
+<img width="400" src="./assets/You Lost.JPG" alt="Game Over Screen"/>
 </p>
